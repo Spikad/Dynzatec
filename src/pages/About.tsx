@@ -31,6 +31,16 @@ export function About() {
                     {member.role}
                   </p>
                   <p className="mt-4 text-base leading-relaxed text-obsidian/80">{member.bio}</p>
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label={`LinkedIn: ${member.name}`}
+                    className="mt-5 inline-flex items-center gap-2 font-heading text-sm font-semibold text-deepCore underline-offset-4 hover:underline"
+                  >
+                    <LinkedInGlyph />
+                    {page.linkedinLabel}
+                  </a>
                 </div>
               </li>
             ))}
@@ -42,6 +52,14 @@ export function About() {
 
       <CtaBand title={page.cta.title} body={page.cta.body} button={page.cta.button} />
     </>
+  )
+}
+
+function LinkedInGlyph() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4" fill="currentColor">
+      <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05c.53-.95 1.83-1.95 3.76-1.95C21.6 8.69 22 11.1 22 14.24V21h-4v-6c0-1.43-.03-3.27-2-3.27-2 0-2.3 1.56-2.3 3.17V21h-4V9Z" />
+    </svg>
   )
 }
 

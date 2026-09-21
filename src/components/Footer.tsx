@@ -80,16 +80,18 @@ export function Footer() {
                   {t.footer.demoLabel}
                 </a>
               </li>
-              <li>
-                <a
-                  href={linkedinUrl}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="text-obsidian underline-offset-4 hover:text-deepCore hover:underline"
-                >
-                  {t.footer.linkedinLabel}
-                </a>
-              </li>
+              {linkedinUrl ? (
+                <li>
+                  <a
+                    href={linkedinUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="text-obsidian underline-offset-4 hover:text-deepCore hover:underline"
+                  >
+                    {t.footer.linkedinLabel}
+                  </a>
+                </li>
+              ) : null}
             </ul>
           </div>
         </div>

@@ -266,27 +266,31 @@ export const sv = {
     intro:
       'Dynzatec grundades i Göteborg av två ingenjörer och en forskare som tröttnade på att vänta på framtiden.',
     teamTitle: 'Teamet',
+    linkedinLabel: 'LinkedIn',
     teamKicker: 'TEAM',
     team: [
       {
         name: 'Omar Alzokani',
         role: 'Medgrundare & VD',
         photo: '/team/omar.jpg',
+        linkedin: 'https://www.linkedin.com/in/omar-alzokani-3bb5271b8',
         bio: 'Serieentreprenör med MSc från Chalmers. Har byggt och driver flera bolag inom B2B och tech. Ansvarar för affär, leverans och partnerskap.',
       },
       {
         name: 'Ahmad Arafat',
         role: 'Medgrundare & CTO',
         photo: '/team/ahmad.jpg',
+        linkedin: 'https://www.linkedin.com/in/ahmad-arafat-90/',
         bio: 'Konstruktör och forskare. Huvudutvecklare av Dynzatecs VPINN-ramverk och medförfattare till EC3-artikeln. Ansvarar för beräkningsmodeller och kvalitetsgranskning.',
       },
       {
-        // TODO: Omar must confirm the title wording and the photo with Dimos
-        // before launch.
         name: 'Dimosthenis Kifokeris',
-        role: 'Forskningspartner, Chalmers',
+        role: 'Styrelseledamot',
         photo: '/team/dimos.jpg',
-        bio: 'Forskare vid Chalmers tekniska högskola och medförfattare till EC3-artikeln. Bidrar med forskningsledning och branschkoppling.',
+        linkedin: 'https://www.linkedin.com/in/dimoskifokeris/',
+        // The academic and EC3 titles are kept in English, the way Chalmers and
+        // EC3 themselves state them.
+        bio: 'Associate Professor in Construction Management and Production vid Chalmers tekniska högskola, Director of PhD Studies och sekreterare i styrelsen för European Council for Computing in Construction (EC3). Medförfattare till EC3-artikeln.',
       },
     ],
     cta: {

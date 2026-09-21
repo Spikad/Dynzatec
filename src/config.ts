@@ -19,8 +19,13 @@ export const demoUrl = 'https://dynzatec-demo.vercel.app'
 export const paperUrl =
   'https://research.chalmers.se/publication/553440/file/553440_Fulltext.pdf'
 
-// PLACEHOLDER: replace with the real Dynzatec AB company page.
-export const linkedinUrl = 'https://www.linkedin.com/company/dynzatec'
+/**
+ * The Dynzatec AB company page on LinkedIn. Empty until the page exists, and
+ * while it is empty the footer leaves the link out rather than pointing at a
+ * URL that does not resolve. The founders' personal profiles are on the About
+ * page, in the team entries in the dictionaries.
+ */
+export const linkedinUrl = ''
 
 export const siteUrl = 'https://dynzatec.se'
 

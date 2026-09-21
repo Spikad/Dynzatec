@@ -57,8 +57,9 @@ narrow screen, where they produce a proper hyphen.
 lockups. Regenerate them if the artwork changes.
 
 `public/team/` holds the About page portraits (`omar.jpg`, `ahmad.jpg`,
-`dimos.jpg`). Until a file is there the page renders the person's initials on
-the brand gradient.
+`dimos.jpg`), square 800px crops on the supplied violet background. If a file is
+ever missing the page renders the person's initials on the brand gradient
+instead of a broken image.
 
 `public/images/hero-structure.jpg` is the home hero photograph, a square 900px
 crop shown from the `lg` breakpoint up. Everywhere else the site uses inline SVG

@@ -264,27 +264,29 @@ export const en: Dict = {
     intro:
       'Dynzatec was founded in Gothenburg by two engineers and a researcher who grew tired of waiting for the future.',
     teamTitle: 'The team',
+    linkedinLabel: 'LinkedIn',
     teamKicker: 'TEAM',
     team: [
       {
         name: 'Omar Alzokani',
         role: 'Co-founder & CEO',
         photo: '/team/omar.jpg',
+        linkedin: 'https://www.linkedin.com/in/omar-alzokani-3bb5271b8',
         bio: 'Serial entrepreneur with an MSc from Chalmers. Has built and runs several companies in B2B and tech. Responsible for business, delivery and partnerships.',
       },
       {
         name: 'Ahmad Arafat',
         role: 'Co-founder & CTO',
         photo: '/team/ahmad.jpg',
+        linkedin: 'https://www.linkedin.com/in/ahmad-arafat-90/',
         bio: 'Structural engineer and researcher. Lead developer of the Dynzatec VPINN framework and co-author of the EC3 paper. Responsible for computational models and quality review.',
       },
       {
-        // TODO: Omar must confirm the title wording and the photo with Dimos
-        // before launch.
         name: 'Dimosthenis Kifokeris',
-        role: 'Research partner, Chalmers',
+        role: 'Board member',
         photo: '/team/dimos.jpg',
-        bio: 'Researcher at Chalmers University of Technology and co-author of the EC3 paper. Contributes research leadership and industry connections.',
+        linkedin: 'https://www.linkedin.com/in/dimoskifokeris/',
+        bio: 'Associate Professor in Construction Management and Production at Chalmers University of Technology, Director of PhD Studies and Secretary of the Board at the European Council for Computing in Construction (EC3). Co-author of the EC3 paper.',
       },
     ],
     cta: {
