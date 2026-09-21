@@ -27,7 +27,7 @@ Anything else renders a 404 page in the language of the path prefix.
 
 | What | File |
 | --- | --- |
-| Contact email, demo URL, LinkedIn URL, site URL, OG image path | `src/config.ts` |
+| Contact emails (Omar primary, Ahmad in the footer), demo URL, LinkedIn URL, site URL, OG image path | `src/config.ts` |
 | Brand colors and font stacks | `src/brand.tokens.json` (read by both `src/config.ts` and `tailwind.config.js`) |
 | Swedish copy | `src/i18n/sv.ts` |
 | English copy | `src/i18n/en.ts` |

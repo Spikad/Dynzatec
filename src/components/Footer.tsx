@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import { pageOrder, type PageKey } from '../i18n/routes'
-import { company, contactEmail, demoUrl, linkedinUrl } from '../config'
+import { coFounderEmail, company, contactEmail, demoUrl, linkedinUrl } from '../config'
 import { Container } from './ui'
 import { Logo } from './Logo'
 
@@ -52,14 +52,16 @@ export function Footer() {
               {t.footer.contactLabel}
             </h2>
             <ul className="mt-4 space-y-2 text-sm">
-              <li>
-                <a
-                  href={`mailto:${contactEmail}`}
-                  className="text-obsidian underline-offset-4 hover:text-deepCore hover:underline"
-                >
-                  {contactEmail}
-                </a>
-              </li>
+              {[contactEmail, coFounderEmail].map((email) => (
+                <li key={email}>
+                  <a
+                    href={`mailto:${email}`}
+                    className="break-words text-obsidian underline-offset-4 hover:text-deepCore hover:underline"
+                  >
+                    {email}
+                  </a>
+                </li>
+              ))}
               <li>
                 <a
                   href={demoUrl}

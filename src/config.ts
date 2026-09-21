@@ -7,8 +7,11 @@ import tokens from './brand.tokens.json'
  * there and it updates everywhere.
  */
 
-// PLACEHOLDER: confirm the address Omar wants public before launch.
-export const contactEmail = 'omar@dynzatec.se'
+/** Primary contact. Every CTA on the site opens a mail to this address. */
+export const contactEmail = 'omar.alzokani@dynzatec.se'
+
+/** Co-founder, listed as a second contact in the footer. */
+export const coFounderEmail = 'ahmad.arafat@dynzatec.se'
 
 export const demoUrl = 'https://dynzatec-demo.vercel.app'
 
