@@ -26,6 +26,7 @@ export const en: Dict = {
     button: 'Go to the home page',
   },
   illustrations: {
+    heroPhoto: 'Steel roof structure of an atrium, seen from below',
     portalFrame: 'Portal frame section',
     lSlab: 'L-shaped slab',
   },

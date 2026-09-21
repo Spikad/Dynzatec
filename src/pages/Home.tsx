@@ -12,7 +12,7 @@ import {
 } from '../components/ui'
 import { ProofStrip } from '../components/ProofStrip'
 import { CtaBand } from '../components/CtaBand'
-import { HexPattern, PortalFrameIllustration } from '../components/Illustrations'
+import { HexPattern } from '../components/Illustrations'
 
 export function Home() {
   const { t, lang, href } = useI18n()
@@ -25,10 +25,10 @@ export function Home() {
         <DecorD className="absolute -right-24 -top-16 h-[34rem]" onDark />
         <HexPattern className="absolute bottom-6 left-[-2rem] h-40 w-48 text-white/15" />
         <Container className="relative py-20 sm:py-28">
-          <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
             <div className="min-w-0">
               <Kicker onDark>{page.kicker}</Kicker>
-              <h1 className="mt-4 max-w-3xl hyphens-auto break-words font-heading text-[1.9rem] font-bold leading-[1.12] text-white sm:text-[2.75rem] lg:text-[3.4rem]">
+              <h1 className="mt-4 max-w-3xl hyphens-auto break-words font-heading text-[1.9rem] font-bold leading-[1.12] text-white sm:text-[2.75rem] lg:text-[2.6rem] xl:text-[3.2rem]">
                 {page.h1}
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/85">{page.sub}</p>
@@ -42,11 +42,17 @@ export function Home() {
               </div>
             </div>
             <div className="hidden lg:block">
-              <div className="rounded-2xl border border-white/25 bg-white/10 p-8">
-                <PortalFrameIllustration
-                  className="h-auto w-full"
-                  label={t.illustrations.portalFrame}
-                  onDark
+              <div className="relative overflow-hidden rounded-2xl border border-white/25">
+                <img
+                  src="/images/hero-structure.jpg"
+                  alt={t.illustrations.heroPhoto}
+                  width={900}
+                  height={900}
+                  className="aspect-square w-full object-cover"
+                />
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-deepCore/25 mix-blend-multiply"
                 />
               </div>
             </div>

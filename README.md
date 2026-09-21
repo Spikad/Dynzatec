@@ -55,6 +55,10 @@ narrow screen, where they produce a proper hyphen.
 `favicon.png`, `apple-touch-icon.png` and `og-image.png` are generated from the
 lockups. Regenerate them if the artwork changes.
 
+`public/images/hero-structure.jpg` is the home hero photograph, a square 900px
+crop shown from the `lg` breakpoint up. Everywhere else the site uses inline SVG
+line illustrations rather than photography.
+
 The lockups are currently PNG. When the SVG originals arrive, drop them in
 `public/brand/` and change the three extensions in `brandAssets` in
 `src/config.ts`, plus the two favicon links in `index.html`. Nothing else needs

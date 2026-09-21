@@ -26,6 +26,7 @@ export const sv = {
     button: 'Till startsidan',
   },
   illustrations: {
+    heroPhoto: 'Stålkonstruktion i ett atriumtak, sedd underifrån',
     portalFrame: 'Portalram i genomskärning',
     lSlab: 'L-formad platta',
   },
