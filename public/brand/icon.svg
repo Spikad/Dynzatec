@@ -1,0 +1,8 @@
+<!-- PLACEHOLDER: replace with the official Dynzatec D mark from the brand guide. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#572A96" />
+  <path
+    d="M20 16h14c11.6 0 20 6.8 20 16s-8.4 16-20 16H20V16Zm10 9v14h4.6c5.4 0 9-2.8 9-7s-3.6-7-9-7H30Z"
+    fill="#FFFFFF"
+  />
+</svg>
