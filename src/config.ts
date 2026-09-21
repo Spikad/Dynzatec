@@ -20,12 +20,20 @@ export const linkedinUrl = 'https://www.linkedin.com/company/dynzatec'
 
 export const siteUrl = 'https://dynzatec.se'
 
+/** 1200x630 social card. Empty means no og:image tag is emitted. */
+export const ogImagePath = '/brand/og-image.png'
+
 /**
- * PLACEHOLDER: drop a 1200x630 brand image at public/brand/og-image.png and set
- * this to '/brand/og-image.png'. While it is empty no og:image tag is emitted,
- * so link previews never point at a missing file.
+ * Brand artwork in public/brand/. The official lockups are currently PNG.
+ * When the SVG originals land, drop them in public/brand/ and change the three
+ * extensions below to .svg. The favicon links live in index.html, which cannot
+ * read this file, so change those two there at the same time.
  */
-export const ogImagePath = ''
+export const brandAssets = {
+  logoHorizontal: '/brand/logo-horizontal.png',
+  logoStacked: '/brand/logo-stacked.png',
+  icon: '/brand/icon.png',
+}
 
 export const company = {
   legalName: 'Dynzatec AB',

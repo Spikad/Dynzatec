@@ -22,7 +22,7 @@ export function Home() {
   return (
     <>
       <section className="relative overflow-hidden bg-quantum">
-        <DecorD className="absolute -right-24 -top-16 h-[34rem] w-[34rem] text-white/10" />
+        <DecorD className="absolute -right-24 -top-16 h-[34rem]" onDark />
         <HexPattern className="absolute bottom-6 left-[-2rem] h-40 w-48 text-white/15" />
         <Container className="relative py-20 sm:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">

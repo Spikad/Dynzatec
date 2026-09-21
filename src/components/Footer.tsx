@@ -20,7 +20,7 @@ export function Footer() {
       <Container className="py-12">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <Logo />
+            <Logo variant="stacked" className="h-20" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-obsidian/80">
               {t.footer.tagline}
             </p>

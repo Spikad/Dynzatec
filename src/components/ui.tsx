@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
+import { brandAssets } from '../config'
 
 export function Container({
   children,
@@ -191,7 +192,7 @@ export function PageHeader({
 }) {
   return (
     <section className="relative overflow-hidden bg-mistTint py-16 sm:py-20">
-      <DecorD className="absolute -right-16 -top-20 h-[26rem] w-[26rem] text-white" />
+      <DecorD className="absolute -right-20 -top-16 h-[26rem]" />
       <Container className="relative">
         <Kicker>{kicker}</Kicker>
         <h1 className="mt-4 max-w-4xl hyphens-auto break-words font-heading text-[1.9rem] font-bold leading-[1.15] text-obsidian sm:text-4xl lg:text-5xl">
@@ -203,14 +204,25 @@ export function PageHeader({
   )
 }
 
-/** Oversized brand D used as near invisible background decoration. */
-export function DecorD({ className = '' }: { className?: string }) {
+/**
+ * The brand D mark, oversized and faded, as background decoration.
+ * Pass onDark on the quantum gradient, where the mark is rendered in white.
+ */
+export function DecorD({
+  className = '',
+  onDark = false,
+}: {
+  className?: string
+  onDark?: boolean
+}) {
   return (
-    <svg viewBox="0 0 200 200" aria-hidden="true" className={className} fill="none">
-      <path
-        d="M52 30h52c38 0 66 30 66 70s-28 70-66 70H52V30Zm34 32v76h16c22 0 36-15 36-38s-14-38-36-38H86Z"
-        fill="currentColor"
-      />
-    </svg>
+    <img
+      src={brandAssets.icon}
+      alt=""
+      aria-hidden="true"
+      className={`w-auto select-none ${
+        onDark ? 'opacity-10 brightness-0 invert' : 'opacity-[0.07]'
+      } ${className}`}
+    />
   )
 }

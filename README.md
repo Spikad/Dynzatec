@@ -41,16 +41,27 @@ narrow screen, where they produce a proper hyphen.
 
 ## Brand assets
 
-The site expects these files in `public/brand/`:
+`public/brand/` holds the official artwork:
 
-- `logo-horizontal.svg` (icon plus wordmark, Deep Core version)
-- `logo-white.svg` (same lockup for gradient and dark backgrounds)
-- `icon.svg` (the D mark alone, also used as the favicon)
+| File | Used for |
+| --- | --- |
+| `logo-horizontal.png` | navbar, all screen sizes |
+| `logo-stacked.png` | footer, and the source of the social card |
+| `icon.png` | the D mark alone, source of the favicon and touch icon |
+| `favicon.png` | browser tab icon, linked from `index.html` |
+| `apple-touch-icon.png` | iOS home screen, linked from `index.html` |
+| `og-image.png` | 1200x630 social card, referenced through `ogImagePath` |
 
-Only a placeholder `icon.svg` is committed. `src/components/Logo.tsx` loads the
-horizontal logo when it exists and otherwise renders the D mark plus the
-wordmark in the heading font, so the site looks correct before the final files
-land. Drop the real SVGs into `public/brand/` and nothing else has to change.
+`favicon.png`, `apple-touch-icon.png` and `og-image.png` are generated from the
+lockups. Regenerate them if the artwork changes.
+
+The lockups are currently PNG. When the SVG originals arrive, drop them in
+`public/brand/` and change the three extensions in `brandAssets` in
+`src/config.ts`, plus the two favicon links in `index.html`. Nothing else needs
+to change. `src/components/Logo.tsx` takes `variant="horizontal" | "stacked" |
+"icon"` and falls back to the D mark plus the wordmark in the heading font if a
+file is ever missing, so the site never shows a broken image. Pass `onDark` to
+render a lockup in white on a gradient or dark background.
 
 ## Color use
 

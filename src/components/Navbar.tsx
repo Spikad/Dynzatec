@@ -33,7 +33,7 @@ export function Navbar() {
       <Container>
         <div className="flex h-16 items-center justify-between gap-4">
           <Link to={href('home')} aria-label="Dynzatec" className="shrink-0">
-            <Logo />
+            <Logo variant="horizontal" className="h-7 sm:h-8" />
           </Link>
 
           <nav aria-label={t.nav.home} className="hidden items-center gap-7 md:flex">

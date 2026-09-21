@@ -16,7 +16,7 @@ export function CtaBand({
 
   return (
     <section className="relative overflow-hidden bg-quantum py-16 sm:py-20">
-      <DecorD className="absolute -bottom-24 -left-16 h-[24rem] w-[24rem] text-white/10" />
+      <DecorD className="absolute -bottom-24 -left-20 h-[24rem]" onDark />
       <Container className="relative">
         <div className="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
           <div className="max-w-2xl">
