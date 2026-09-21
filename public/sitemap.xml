@@ -64,4 +64,20 @@
     <lastmod>2026-09-21</lastmod>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://dynzatec.se/om-oss</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dynzatec.se/om-oss" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dynzatec.se/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dynzatec.se/om-oss" />
+    <lastmod>2026-09-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dynzatec.se/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://dynzatec.se/om-oss" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://dynzatec.se/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dynzatec.se/om-oss" />
+    <lastmod>2026-09-21</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>

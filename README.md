@@ -20,6 +20,7 @@ npm run preview    # serve the production build
 | Services | `/tjanster` | `/en/services` |
 | Tools | `/verktyg` | `/en/tools` |
 | Research | `/forskning` | `/en/research` |
+| About | `/om-oss` | `/en/about` |
 
 Anything else renders a 404 page in the language of the path prefix.
 
@@ -54,6 +55,10 @@ narrow screen, where they produce a proper hyphen.
 
 `favicon.png`, `apple-touch-icon.png` and `og-image.png` are generated from the
 lockups. Regenerate them if the artwork changes.
+
+`public/team/` holds the About page portraits (`omar.jpg`, `ahmad.jpg`,
+`dimos.jpg`). Until a file is there the page renders the person's initials on
+the brand gradient.
 
 `public/images/hero-structure.jpg` is the home hero photograph, a square 900px
 crop shown from the `lg` breakpoint up. Everywhere else the site uses inline SVG

@@ -8,6 +8,7 @@ export const en: Dict = {
     bookCallShort: 'Book a call',
     viewDemo: 'See our live demo',
     openDemo: 'Open the live demo',
+    readPaper: 'Read the paper (PDF)',
     skipToContent: 'Skip to content',
     readMore: 'Read more',
   },
@@ -16,6 +17,7 @@ export const en: Dict = {
     services: 'Services',
     tools: 'Tools',
     research: 'Research',
+    about: 'About',
     openMenu: 'Open menu',
     closeMenu: 'Close menu',
     languageLabel: 'Language',
@@ -66,11 +68,24 @@ export const en: Dict = {
       description:
         'Dynzatec research presented at EC3 2026 in Corfu. Inference in 0.015 seconds per design, 7.25 percent L2 deviation against FEM and 60,155 validation points.',
     },
+    about: {
+      title: 'About | The team behind Dynzatec',
+      description:
+        'Dynzatec was founded in Gothenburg by two engineers and a researcher. Meet the team behind the VPINN framework, the EC3 paper and the design commissions.',
+    },
   },
   home: {
     kicker: 'STRUCTURAL DESIGN CONSULTANCY · GOTHENBURG',
-    h1: 'Structural engineering, built on research.',
-    sub: 'Dynzatec is a structural design consultancy with its own computational tools. We design steel halls, portal frames and industrial buildings, fast, Eurocode-verified and grounded in published research.',
+    h1: 'The next generation of structural consultancy.',
+    sub: 'We combine classical structural engineering with our own AI research and computational tools. Published at EC3 2026. Built in Gothenburg.',
+    whyWeExist: {
+      kicker: 'WHY WE EXIST',
+      paragraphs: [
+        'The structural engineering industry calculates the way it did thirty years ago. Model, mesh, solve, wait. One parameter changes and the cycle starts over.',
+        'We are building the consultancy where the analysis is immediate. Where the engineer tests a hundred alternatives instead of five, and where every deliverable is still Eurocode-verified by a senior structural engineer.',
+        'The research is published. The demo is live. The tools are on their way. This is not a vision for ten years from now. It is how we work today.',
+      ],
+    },
     whatWeDo: {
       kicker: 'WHAT WE DO',
       title: 'What we do',
@@ -211,8 +226,8 @@ export const en: Dict = {
     paper: {
       kicker: 'PUBLICATION',
       title: 'Parametric VPINN Framework for Rapid Design Exploration of Thin Slabs',
-      venue:
-        'Presented at the European Conference on Computing in Construction (EC3 2026), Corfu.',
+      venue: 'Published. Presented at EC3 2026, Corfu, July 2026.',
+      conference: 'European Conference on Computing in Construction.',
       authors: 'Dynzatec AB in collaboration with Chalmers University of Technology.',
     },
     stats: {
@@ -241,6 +256,41 @@ export const en: Dict = {
       title: 'Want to follow the research or discuss a pilot collaboration? Get in touch.',
       body: 'The live demo shows where the research stands today.',
       button: 'Get in touch',
+    },
+  },
+  about: {
+    kicker: 'ABOUT',
+    h1: 'Two engineers and a researcher.',
+    intro:
+      'Dynzatec was founded in Gothenburg by two engineers and a researcher who grew tired of waiting for the future.',
+    teamTitle: 'The team',
+    teamKicker: 'TEAM',
+    team: [
+      {
+        name: 'Omar Alzokani',
+        role: 'Co-founder & CEO',
+        photo: '/team/omar.jpg',
+        bio: 'Serial entrepreneur with an MSc from Chalmers. Has built and runs several companies in B2B and tech. Responsible for business, delivery and partnerships.',
+      },
+      {
+        name: 'Ahmad Arafat',
+        role: 'Co-founder & CTO',
+        photo: '/team/ahmad.jpg',
+        bio: 'Structural engineer and researcher. Lead developer of the Dynzatec VPINN framework and co-author of the EC3 paper. Responsible for computational models and quality review.',
+      },
+      {
+        // TODO: Omar must confirm the title wording and the photo with Dimos
+        // before launch.
+        name: 'Dimosthenis Kifokeris',
+        role: 'Research partner, Chalmers',
+        photo: '/team/dimos.jpg',
+        bio: 'Researcher at Chalmers University of Technology and co-author of the EC3 paper. Contributes research leadership and industry connections.',
+      },
+    ],
+    cta: {
+      title: 'Want to work with us, or hear more about the research?',
+      body: 'You speak directly with the engineer doing the calculations.',
+      button: 'Book a call',
     },
   },
 }

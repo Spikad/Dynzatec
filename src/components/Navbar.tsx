@@ -21,6 +21,7 @@ export function Navbar() {
     services: t.nav.services,
     tools: t.nav.tools,
     research: t.nav.research,
+    about: t.nav.about,
   }
 
   const linkClass = ({ isActive }: { isActive: boolean }) =>

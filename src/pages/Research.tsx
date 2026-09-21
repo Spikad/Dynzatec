@@ -1,5 +1,5 @@
 import { useI18n } from '../i18n'
-import { demoUrl, mailtoEn, mailtoSv } from '../config'
+import { demoUrl, mailtoEn, mailtoSv, paperUrl } from '../config'
 import {
   ButtonLink,
   Card,
@@ -30,12 +30,18 @@ export function Research() {
               <h2 className="mt-4 font-heading text-2xl font-bold leading-snug text-obsidian">
                 {page.paper.title}
               </h2>
-              <p className="mt-4 text-base leading-relaxed text-obsidian/80">{page.paper.venue}</p>
-              {/* TODO: Omar must confirm with the co-authors before publishing
-                  author names and the Chalmers affiliation. */}
+              <p className="mt-4 font-mono text-sm leading-relaxed text-deepCore">
+                {page.paper.venue}
+              </p>
+              <p className="mt-3 text-base leading-relaxed text-obsidian/80">
+                {page.paper.conference}
+              </p>
               <p className="mt-2 text-base leading-relaxed text-obsidian/80">
                 {page.paper.authors}
               </p>
+              <ButtonLink href={paperUrl} variant="primary" external className="mt-6 self-start">
+                {t.common.readPaper}
+              </ButtonLink>
             </Card>
             <div className="grid place-items-center rounded-2xl bg-mistTint p-8">
               <LSlabIllustration

@@ -62,6 +62,22 @@ export function Home() {
 
       <Section>
         <Container>
+          <Kicker>{page.whyWeExist.kicker}</Kicker>
+          <div className="mt-6 max-w-3xl space-y-6">
+            {page.whyWeExist.paragraphs.map((paragraph) => (
+              <p
+                key={paragraph}
+                className="font-heading text-xl font-medium leading-relaxed text-deepCore sm:text-2xl sm:leading-relaxed"
+              >
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
+      <Section tint>
+        <Container>
           <SectionHeading kicker={page.whatWeDo.kicker} title={page.whatWeDo.title} />
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {page.whatWeDo.cards.map((card) => (
@@ -85,7 +101,7 @@ export function Home() {
 
       <ProofStrip />
 
-      <Section tint>
+      <Section>
         <Container>
           <SectionHeading kicker={page.why.kicker} title={page.why.title} />
           <div className="mt-10 grid gap-6 md:grid-cols-3">

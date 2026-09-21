@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n'
 import { pageOrder, type PageKey } from '../i18n/routes'
-import { coFounderEmail, company, contactEmail, demoUrl, linkedinUrl } from '../config'
+import {
+  coFounderEmail,
+  company,
+  contactEmail,
+  demoUrl,
+  linkedinUrl,
+  paperUrl,
+} from '../config'
 import { Container } from './ui'
 import { Logo } from './Logo'
 
@@ -13,6 +20,7 @@ export function Footer() {
     services: t.nav.services,
     tools: t.nav.tools,
     research: t.nav.research,
+    about: t.nav.about,
   }
 
   return (
@@ -88,7 +96,14 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col gap-2 border-t border-alloyGrey/40 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-xs text-obsidian/70">{t.footer.rights}</p>
-          <p className="font-mono text-xs text-obsidian/70">{t.footer.peerReviewed}</p>
+          <a
+            href={paperUrl}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="font-mono text-xs text-obsidian/70 underline-offset-4 hover:text-deepCore hover:underline"
+          >
+            {t.footer.peerReviewed}
+          </a>
         </div>
       </Container>
     </footer>

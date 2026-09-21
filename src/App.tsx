@@ -8,6 +8,7 @@ import { Home } from './pages/Home'
 import { Services } from './pages/Services'
 import { Tools } from './pages/Tools'
 import { Research } from './pages/Research'
+import { About } from './pages/About'
 import { NotFound } from './pages/NotFound'
 
 const pageComponents: Record<PageKey, () => ReactElement> = {
@@ -15,6 +16,7 @@ const pageComponents: Record<PageKey, () => ReactElement> = {
   services: Services,
   tools: Tools,
   research: Research,
+  about: About,
 }
 
 type RouteDef = { path: string; lang: Lang; page: PageKey }

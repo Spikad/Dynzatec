@@ -15,6 +15,10 @@ export const coFounderEmail = 'ahmad.arafat@dynzatec.se'
 
 export const demoUrl = 'https://dynzatec-demo.vercel.app'
 
+/** The published EC3 2026 paper, hosted in the Chalmers research repository. */
+export const paperUrl =
+  'https://research.chalmers.se/publication/553440/file/553440_Fulltext.pdf'
+
 // PLACEHOLDER: replace with the real Dynzatec AB company page.
 export const linkedinUrl = 'https://www.linkedin.com/company/dynzatec'
 

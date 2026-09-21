@@ -8,6 +8,7 @@ export const sv = {
     bookCallShort: 'Boka samtal',
     viewDemo: 'Se vår live-demo',
     openDemo: 'Öppna live-demon',
+    readPaper: 'Läs artikeln (PDF)',
     skipToContent: 'Hoppa till innehåll',
     readMore: 'Läs mer',
   },
@@ -16,6 +17,7 @@ export const sv = {
     services: 'Tjänster',
     tools: 'Verktyg',
     research: 'Forskning',
+    about: 'Om oss',
     openMenu: 'Öppna meny',
     closeMenu: 'Stäng meny',
     languageLabel: 'Språk',
@@ -66,13 +68,26 @@ export const sv = {
       description:
         'Dynzatecs VPINN-forskning presenterades vid EC3 2026 i Korfu. Inferens på 0,015 sekunder per design, 7,25 procent L2-avvikelse mot FEM och 60 155 valideringspunkter.',
     },
+    about: {
+      title: 'Om oss | Teamet bakom Dynzatec',
+      description:
+        'Dynzatec grundades i Göteborg av två ingenjörer och en forskare. Möt teamet bakom VPINN-ramverket, EC3-artikeln och konstruktionsuppdragen.',
+    },
   },
   home: {
     kicker: 'KONSTRUKTIONSKONSULT · GÖTEBORG',
     // The soft hyphen lets long Swedish compounds break with a visible hyphen
     // on narrow screens. It is invisible when the word is not broken.
-    h1: 'Byggnads­konstruktion, byggd på forskning.',
-    sub: 'Dynzatec är ett konstruktionskonsultbolag med egna beräkningsverktyg. Vi projekterar stålhallar, portalramar och industribyggnader, snabbt, Eurokod-säkrat och med publicerad forskning i grunden.',
+    h1: 'Nästa generations konstruktions­konsult.',
+    sub: 'Vi förenar klassisk konstruktionskompetens med egen AI-forskning och egna beräkningsverktyg. Publicerat vid EC3 2026. Byggt i Göteborg.',
+    whyWeExist: {
+      kicker: 'VARFÖR VI FINNS',
+      paragraphs: [
+        'Konstruktionsbranschen räknar som den gjorde för trettio år sedan. Modellera, mesha, lös, vänta. En parameter ändras och cykeln börjar om.',
+        'Vi bygger konsultbolaget där analysen är omedelbar. Där ingenjören testar hundra alternativ i stället för fem, och där varje leverans fortfarande är Eurokod-säkrad av en senior konstruktör.',
+        'Forskningen är publicerad. Demon är live. Verktygen är på väg. Det här är inte en vision om tio år. Det är hur vi arbetar nu.',
+      ],
+    },
     whatWeDo: {
       kicker: 'VAD VI GÖR',
       title: 'Vad vi gör',
@@ -213,8 +228,8 @@ export const sv = {
     paper: {
       kicker: 'PUBLIKATION',
       title: 'Parametric VPINN Framework for Rapid Design Exploration of Thin Slabs',
-      venue:
-        'Presenterad vid European Conference on Computing in Construction (EC3 2026), Korfu.',
+      venue: 'Publicerad. Presenteras vid EC3 2026, Korfu, juli 2026.',
+      conference: 'European Conference on Computing in Construction.',
       authors: 'Dynzatec AB i samarbete med Chalmers tekniska högskola.',
     },
     stats: {
@@ -243,6 +258,41 @@ export const sv = {
       title: 'Vill ni följa forskningen eller diskutera pilotsamarbete? Hör av er.',
       body: 'Live-demon visar var forskningen står i dag.',
       button: 'Hör av er',
+    },
+  },
+  about: {
+    kicker: 'OM OSS',
+    h1: 'Två ingenjörer och en forskare.',
+    intro:
+      'Dynzatec grundades i Göteborg av två ingenjörer och en forskare som tröttnade på att vänta på framtiden.',
+    teamTitle: 'Teamet',
+    teamKicker: 'TEAM',
+    team: [
+      {
+        name: 'Omar Alzokani',
+        role: 'Medgrundare & VD',
+        photo: '/team/omar.jpg',
+        bio: 'Serieentreprenör med MSc från Chalmers. Har byggt och driver flera bolag inom B2B och tech. Ansvarar för affär, leverans och partnerskap.',
+      },
+      {
+        name: 'Ahmad Arafat',
+        role: 'Medgrundare & CTO',
+        photo: '/team/ahmad.jpg',
+        bio: 'Konstruktör och forskare. Huvudutvecklare av Dynzatecs VPINN-ramverk och medförfattare till EC3-artikeln. Ansvarar för beräkningsmodeller och kvalitetsgranskning.',
+      },
+      {
+        // TODO: Omar must confirm the title wording and the photo with Dimos
+        // before launch.
+        name: 'Dimosthenis Kifokeris',
+        role: 'Forskningspartner, Chalmers',
+        photo: '/team/dimos.jpg',
+        bio: 'Forskare vid Chalmers tekniska högskola och medförfattare till EC3-artikeln. Bidrar med forskningsledning och branschkoppling.',
+      },
+    ],
+    cta: {
+      title: 'Vill ni arbeta med oss eller veta mer om forskningen?',
+      body: 'Ni pratar direkt med den som räknar.',
+      button: 'Boka ett samtal',
     },
   },
 }
